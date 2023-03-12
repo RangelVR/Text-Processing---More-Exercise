@@ -1,4 +1,4 @@
-﻿
+
 string[] morseCode = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
 string message = string.Empty;
@@ -7,8 +7,8 @@ foreach (var code in morseCode)
 {
     char ch = ' ';
 
-	switch (code)
-	{
+    switch (code)
+    {
         case "|": ch = ' '; break;
         case ".-": ch = 'A'; break;
         case "-...": ch = 'B'; break;
