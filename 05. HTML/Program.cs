@@ -1,4 +1,4 @@
-﻿string article = Console.ReadLine();
+string article = Console.ReadLine();
 string content = Console.ReadLine();
 
 List<string> listComments = new List<string>();
@@ -7,12 +7,12 @@ while (true)
 {
     string comment = Console.ReadLine();
 
-	if (comment == "end of comments")
-	{
-		break;
-	}
+    if (comment == "end of comments")
+    {
+        break;
+    }
 
-	listComments.Add(comment);
+    listComments.Add(comment);
 }
 
 Console.WriteLine("<h1>");
@@ -25,7 +25,7 @@ Console.WriteLine("</article>");
 
 foreach (var comment in listComments)
 {
-	Console.WriteLine("<div>");
-	Console.WriteLine(comment);
-	Console.WriteLine("</div>");
+    Console.WriteLine("<div>");
+    Console.WriteLine(comment);
+    Console.WriteLine("</div>");
 }
